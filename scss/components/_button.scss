@@ -1,0 +1,17 @@
+button {
+    background: white;
+    color: red;
+    padding: 10px;
+    font-size: 12px;
+    width: 135px;
+    border-radius: 10px;
+    height: 40px;
+    transition: 0.3s;
+    display: inline-block;
+    font-family: "Montserrat";
+    &:hover {
+      background-color: red;
+      color: white;
+    }
+  }
+  

@@ -1,0 +1,18 @@
+
+@import "./vendors/bootstrap/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "./abstract/functions", "./abstract/mixins", "./abstract/variables","./abstract/mixins";
+@import "./base/normalize", "./base/reset", "./base/typography";
+@import "./components/button", "./components/card";
+@import "./layout/footer", "./layout/header","./layout/mainn";
+@import "./pages/home", "./pages/menu";
+@import "./theme/theme";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+

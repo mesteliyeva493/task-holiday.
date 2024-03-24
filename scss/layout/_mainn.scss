@@ -1,0 +1,269 @@
+@import "../abstract/variables";
+@import"../abstract/mixins";
+
+#card{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-top:100px;
+    padding-bottom: 40px;
+    justify-content: center;
+    
+    
+   .word{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    width: 50%;
+    margin-right: 10px;
+    h2{
+        color: red;
+        font-family: "dancing script";
+        font-size: 40px;
+        font-weight: 500;
+        margin: 0;
+    }
+    h3{
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing:5px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        margin: 0;
+    }
+   }
+   .photo{
+    margin-left: 20px;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 30%;
+    img{
+        width: 100%;
+        height: auto;
+        border: none;
+        border-radius:30px;
+        transition: transform 0.3s ease;
+
+    }
+    img:hover{
+        transform: scale(1.1);
+    }
+   }
+
+}
+#discover{
+    background-image: url(https://preview.colorlib.com/theme/pato/images/bg-intro-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 350px;
+    .dis{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+     h2{
+        color: red;
+        font-family: "dancing script";
+        font-size: 40px;
+        font-weight: 500;
+        margin: 0;
+        text-align: center;
+     }
+     h3{
+        color:white;
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing:5px;
+        text-align: center;
+     }
+
+}
+}
+#rdr{
+    width: 100%;
+    height: 500px;
+    margin: 20px;
+    padding: 60px;
+  
+
+    .card-group{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+     
+      
+        .card{  
+            margin-right: 50px; 
+            border: none;
+           .card-img-top{
+            border-radius: 20px;
+           }
+          .card-body{
+            h5{
+                color:black;
+                
+            }
+            p{
+
+                color: gray;
+            }
+            a{
+                text-decoration: none;
+                color:black;
+                &:hover {
+                    color: red; }
+            }
+          }
+
+        }
+      
+    }
+  
+
+}
+
+#grid1{
+  
+    height: 900px;
+    width: 100%;
+    background-color: rgb(255, 250, 251);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+   .dis{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h3{
+        color: red;
+        font-family: "dancing script";
+        font-size: 40px;
+        font-weight: 500;
+        margin: 0;
+    }
+    p{
+        font-size: 50px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+   }
+
+  .grid-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+    .parent {
+        div:hover img{
+            transform: scale(1.1);
+        }
+        
+     
+        display: grid;
+        grid-template-columns: repeat(9, 100px);
+        grid-template-rows: repeat(6, 100px);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        
+        .div1 { grid-area: 1 / 1 / 5 / 4; }
+        .div2 { grid-area: 1 / 4 / 5 / 7; }
+        .div3 { grid-area: 1 / 7 / 3 / 10; }
+        .div4 { grid-area: 3 / 7 / 5 / 10; }
+        .div5 { grid-area: 5 / 7 / 7 / 10; }
+        .div6 { grid-area: 5 / 1 / 7 / 7; }
+  
+        .div1, .div2, .div3, .div4, .div5, .div6 {
+            position: relative; 
+            overflow: hidden; 
+        }
+
+        img{
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .3s linear;
+        }
+      
+        .div1:hover img,
+        .div2:hover img,
+        .div3:hover img,
+        .div4:hover img,
+        .div5:hover img,
+        .div6:hover img {
+            transform: scale(1.1);
+            
+        
+    }
+}
+}
+
+#up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-image: url(https://preview.colorlib.com/theme/pato/images/bg-event-04.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .card{
+        width: 1000px;
+        display: flex;
+
+        .col-md-4{
+            img{
+                width:100%;
+                height: 350px;
+            }
+        }
+        .col-md-8{
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .card-body{
+             
+                h1{
+                    color: red;
+                }
+                p{
+                    color:gray;
+                }
+                a{
+                    color: black;
+                    text-decoration: none;
+                    &:hover {
+                        color: red; }
+                }
+            }
+        }
+    }
+ 
+}
+
+
