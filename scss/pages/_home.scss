@@ -1,0 +1,668 @@
+@import "../abstract/variables";
+@import"../abstract/mixins";
+header{
+    width: 100%;
+    height: 715px;
+    background-image: url(https://preview.colorlib.com/theme/pato/images/slide1-01.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    color: white;
+    padding-top: 35px;
+   
+    .navbar{
+        max-width: 1200px;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;  
+        .links{
+            color: white;
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            .nav-item{
+                margin-right:20px;
+               }
+            }
+        }
+    }
+    .h1h2{
+        padding-top: 120px;
+        text-align: center;
+        h1{
+            font-size: 50px;
+            font-weight: 500;
+            font-family:"dancing script";
+        }
+        h2{
+            font-family: 'montserrat';
+            font-size: 80px;
+            font-weight: 650;
+        }
+     
+    }
+
+  .nav-item:hover{
+    color: red;
+  }
+
+  #card{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-top:100px;
+    padding-bottom: 40px;
+    justify-content: center;
+    
+    
+   .word{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    width: 50%;
+    margin-right: 10px;
+    h2{
+        color: red;
+        font-family: "dancing script";
+        font-size: 40px;
+        font-weight: 500;
+        margin: 0;
+    }
+    h3{
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing:5px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        margin: 0;
+    }
+   }
+   .photo{
+    margin-left: 20px;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 30%;
+    img{
+        width: 100%;
+        height: auto;
+        border: none;
+        border-radius:30px;
+        transition: transform 0.3s ease;
+
+    }
+    img:hover{
+        transform: scale(1.1);
+    }
+   }
+
+}
+#discover{
+    background-image: url(https://preview.colorlib.com/theme/pato/images/bg-intro-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 350px;
+    .dis{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+     h2{
+        color: red;
+        font-family: "dancing script";
+        font-size: 40px;
+        font-weight: 500;
+        margin: 0;
+        text-align: center;
+     }
+     h3{
+        color:white;
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing:5px;
+        text-align: center;
+     }
+
+}
+}
+#rdr{
+    width: 100%;
+    height: 500px;
+    margin: 20px;
+    padding: 60px;
+  
+
+    .card-group{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+     
+      
+        .card{  
+            margin-right: 50px; 
+            border: none;
+           .card-img-top{
+            border-radius: 20px;
+           }
+          .card-body{
+            h5{
+                color:black;
+                
+            }
+            p{
+
+                color: gray;
+            }
+            a{
+                text-decoration: none;
+                color:black;
+                &:hover {
+                    color: red; }
+            }
+          }
+
+        }
+      
+    }
+  
+
+}
+
+#grid1{
+  
+    height: 900px;
+    width: 100%;
+    background-color: rgb(255, 250, 251);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+   .dis{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h3{
+        color: red;
+        font-family: "dancing script";
+        font-size: 40px;
+        font-weight: 500;
+        margin: 0;
+    }
+    p{
+        font-size: 50px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+   }
+
+  .grid-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+    .parent {
+        div:hover img{
+            transform: scale(1.1);
+        }
+        
+     
+        display: grid;
+        grid-template-columns: repeat(9, 100px);
+        grid-template-rows: repeat(6, 100px);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        
+        .div1 { grid-area: 1 / 1 / 5 / 4; }
+        .div2 { grid-area: 1 / 4 / 5 / 7; }
+        .div3 { grid-area: 1 / 7 / 3 / 10; }
+        .div4 { grid-area: 3 / 7 / 5 / 10; }
+        .div5 { grid-area: 5 / 7 / 7 / 10; }
+        .div6 { grid-area: 5 / 1 / 7 / 7; }
+  
+        .div1, .div2, .div3, .div4, .div5, .div6 {
+            position: relative; 
+            overflow: hidden; 
+        }
+
+        img{
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .3s linear;
+        }
+      
+        .div1:hover img,
+        .div2:hover img,
+        .div3:hover img,
+        .div4:hover img,
+        .div5:hover img,
+        .div6:hover img {
+            transform: scale(1.1);
+            
+        
+    }
+}
+}
+
+#up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-image: url(https://preview.colorlib.com/theme/pato/images/bg-event-04.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .card{
+        width: 1000px;
+        display: flex;
+
+        .col-md-4{
+            img{
+                width:100%;
+                height: 350px;
+            }
+        }
+        .col-md-8{
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .card-body{
+             
+                h1{
+                    color: red;
+                }
+                p{
+                    color:gray;
+                }
+                a{
+                    color: black;
+                    text-decoration: none;
+                    &:hover {
+                        color: red; }
+                }
+            }
+        }
+    }
+ 
+}
+
+#card2{
+    width:100%;
+    height: 650px;
+    margin: 0 auto;
+    background-color: rgb(207, 209, 210);
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-top:100px;
+    padding-bottom: 40px;
+    justify-content: center;
+
+         .left , .rigth{
+          
+            gap: 20px;
+            padding: 20px;
+            width: 50%;
+          
+            form-group{
+                margin-bottom: 20px;
+                width: calc(50% - 10px);
+                margin-right: 10px; 
+            }
+            .col{
+            display: flex;
+            flex-wrap: wrap;
+               
+            }
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            input[type="text"],
+             input[type="tel"], 
+             input[type="email"], 
+             input[type="date"],
+             input[type="time"], 
+             input[type="number"]{
+                
+                width:200px;
+                padding: 8px;
+                border:1px solid #a09e9e;
+                border-radius: 5px;
+            }
+
+      
+            }
+           
+
+         }
+         .img-container{
+            height: 600px;
+            margin-left: 20px;
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 60%;
+            
+            img{
+                width: 100%;
+            
+                border: none;
+                border-radius:30px;
+                transition: transform 0.3s ease;
+        
+            }
+            img:hover{
+                transform: scale(1.1);
+            }
+
+}
+
+
+
+#card3{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    overflow: hidden;
+    padding-top:100px;
+    padding-bottom: 40px;
+    justify-content: center;
+
+
+    .card {
+        border: none;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 20px;
+              
+        h5,h4,p{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+            padding: 20px;
+            width: 100%;
+            margin-right: 10px;
+        }
+        h5{
+            color: red;
+            font-family: "dancing script";
+            font-size: 40px;
+            font-weight: 500;
+            margin: 0;
+        }
+        h4{
+            font-size: 50px;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing:5px;
+        }
+        p{
+            color: grey;
+        }
+        
+        .img-container2 {
+            width: 150px; 
+            height: 150px; 
+            overflow: hidden;
+            border-radius: 50%;
+            margin: 0 auto; 
+           
+
+            img {
+                width: 100%;
+                height: auto; 
+                border-radius: 50%;
+                border: 5px red solid;
+            }
+
+    }
+
+    
+}
+}
+
+#video{ 
+    background-image:url(https://preview.colorlib.com/theme/pato/images/bg-cover-video-02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 350px;
+    .dis2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+     h2{
+        color: red;
+        font-family: "dancing script";
+        font-size: 40px;
+        font-weight: 500;
+        margin: 0;
+        text-align: center;
+     }
+     h3{
+        color:white;
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing:5px;
+        text-align: center;
+     }
+
+}
+}
+
+#card4{
+    width: 100%;
+    height: 700px;
+    margin: 20px;
+    padding: 60px;
+    .card-group{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    
+    .card{  
+        margin-right: 50px; 
+        border: none;
+       .card-img-top{
+        border-radius: 20px;
+       }
+       .card-body{
+        h5{
+            color:black;
+            
+        }
+        p{
+
+            color: gray;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+            &:hover {
+                color: red; }
+        }
+      }
+  
+    }
+}
+}
+#sign{
+    color:rgb(0, 0, 0);
+    height: 260px;
+    width: 100%;
+    background-color: rgb(212, 212, 212);
+    padding: 20px;
+  
+     
+       .containerf{
+        height: 100%;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+
+        .email{
+            background-color: rgb(255, 255, 255);
+            width:200px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+              
+       }
+
+    
+}
+#main{
+    display: flex;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    background-color: rgb(52, 50, 50);
+      
+    ul{
+        li{
+            color:grey;
+        }
+    }
+    h4{
+        color:white;
+        font-size: 20px;
+    }
+    a{
+        color: red;
+    }
+    p{
+        color: gray;
+    }
+     
+
+    .parent {
+        margin: 100px;
+        padding: 50px;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        grid-template-rows: repeat(2,400px);
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+        }
+        
+        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div2 { grid-area: 1 / 2 / 2 / 3; }
+        .div3 { grid-area: 2 / 1 / 3 / 2; }
+        .div4 { grid-area: 2 / 2 / 3 / 3; }
+
+    .parent2{
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: repeat(3, 100px);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        }
+        
+        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div2 { grid-area: 1 / 2 / 2 / 3; }
+        .div3 { grid-area: 1 / 3 / 2 / 4; }
+        .div4 { grid-area: 1 / 4 / 2 / 5; }
+        .div5 { grid-area: 2 / 1 / 3 / 2; }
+        .div6 { grid-area: 2 / 2 / 3 / 3; }
+        .div7 { grid-area: 2 / 3 / 3 / 4; }
+        .div8 { grid-area: 2 / 4 / 3 / 5; }
+        .div9 { grid-area: 3 / 1 / 4 / 2; }
+        .div10 { grid-area: 3 / 2 / 4 / 3; }
+        .div11 { grid-area: 3 / 3 / 4 / 4; }
+        .div12 { grid-area: 3 / 4 / 4 / 5; }
+
+        .div1, .div2, .div3, .div4, .div5, .div6,.div8,.div9,.div10,.div11,.div12 {
+            position: relative; 
+            overflow: hidden; 
+            
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .3s linear;
+        }
+        .div1:hover img,
+        .div2:hover img,
+        .div3:hover img,
+        .div4:hover img,
+        .div5:hover img,
+        .div6:hover img
+        .div7:hover img
+        .div8:hover img
+        .div9:hover img
+        .div10:hover img
+        .div11:hover img
+        .div12:hover img {
+            transform: scale(1.1);
+            
+        
+    }
+}
+.two{
+    background-color: rgb(14, 12, 12);
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+      .icons{
+           margin: 10px 20px;
+           padding-left: 20px;
+          
+      }
+    .linkss{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+     
+                
+        
+    }
+ 
+    a{ 
+        color:white;
+        text-decoration: none;
+    }
+}
+
+
+
+

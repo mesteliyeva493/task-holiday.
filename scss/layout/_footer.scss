@@ -1,0 +1,116 @@
+@import "../abstract/variables";
+@import"../abstract/mixins";
+
+#main{
+    display: flex;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    background-color: rgb(52, 50, 50);
+      
+    ul{
+        li{
+            color:grey;
+        }
+    }
+    h4{
+        color:white;
+        font-size: 20px;
+    }
+    a{
+        color: red;
+    }
+    p{
+        color: gray;
+    }
+     
+
+    .parent {
+        margin: 100px;
+        padding: 50px;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        grid-template-rows: repeat(2,400px);
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+        }
+        
+        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div2 { grid-area: 1 / 2 / 2 / 3; }
+        .div3 { grid-area: 2 / 1 / 3 / 2; }
+        .div4 { grid-area: 2 / 2 / 3 / 3; }
+
+    .parent2{
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: repeat(3, 100px);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        }
+        
+        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div2 { grid-area: 1 / 2 / 2 / 3; }
+        .div3 { grid-area: 1 / 3 / 2 / 4; }
+        .div4 { grid-area: 1 / 4 / 2 / 5; }
+        .div5 { grid-area: 2 / 1 / 3 / 2; }
+        .div6 { grid-area: 2 / 2 / 3 / 3; }
+        .div7 { grid-area: 2 / 3 / 3 / 4; }
+        .div8 { grid-area: 2 / 4 / 3 / 5; }
+        .div9 { grid-area: 3 / 1 / 4 / 2; }
+        .div10 { grid-area: 3 / 2 / 4 / 3; }
+        .div11 { grid-area: 3 / 3 / 4 / 4; }
+        .div12 { grid-area: 3 / 4 / 4 / 5; }
+
+        .div1, .div2, .div3, .div4, .div5, .div6,.div8,.div9,.div10,.div11,.div12 {
+            position: relative; 
+            overflow: hidden; 
+            
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .3s linear;
+        }
+        .div1:hover img,
+        .div2:hover img,
+        .div3:hover img,
+        .div4:hover img,
+        .div5:hover img,
+        .div6:hover img
+        .div7:hover img
+        .div8:hover img
+        .div9:hover img
+        .div10:hover img
+        .div11:hover img
+        .div12:hover img {
+            transform: scale(1.1);
+            
+        
+    }
+}
+.two{
+    background-color: rgb(14, 12, 12);
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+      .icons{
+           margin: 10px 20px;
+           padding-left: 20px;
+          
+      }
+    .linkss{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+     
+                
+        
+    }
+ 
+    a{ 
+        color:white;
+        text-decoration: none;
+    }
+}

@@ -1,10 +1,37 @@
 
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-
+@mixin media-phone-only {
+    @media (min-width: 300px) and (max-width: 480px) {
+      @content;
+    }
+  }
+  @mixin media-tablet-up {
+    @media (min-width: 481px) and (max-width: 768px) {
+      @content;
+    }
+  }
+  @mixin media--tablet-landscape-up {
+    @media (min-width: 769px) and (max-width: 1024px) {
+      @content;
+    }
+  }
+  @mixin media--desktop-up {
+    @media (min-width: 1025px) and (max-width: 1200px) {
+      @content;
+    }
+  }
+  @mixin media-large-desktop-up {
+    @media (min-width: 1201px) {
+      @content;
+    }
+  }
+  
+  @mixin custom-media($min-width, $max-width) {
+    @media (min-width: $min-width) and (max-width: $max-width) {
+      @content;
+    }
+  }
 
