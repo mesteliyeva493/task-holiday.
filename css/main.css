@@ -20,6 +20,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11014,6 +11016,52 @@ button:hover {
   color: red;
 }
 
+.third-header {
+  width: 100%;
+  height: 550px;
+  background-image: url(https://preview.colorlib.com/theme/pato/images/bg-title-page-02.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  color: white;
+  padding-top: 35px;
+}
+.third-header .navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.third-header .navbar .links {
+  color: white;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.third-header .navbar .links .nav-item {
+  margin-right: 20px;
+}
+.third-header .h2 {
+  padding-top: 150px;
+  text-align: center;
+}
+.third-header .h2 h2, .third-header .h2 .h2 {
+  font-family: "montserrat";
+  font-size: 50px;
+  font-weight: 650;
+}
+@media (min-width: 300px) and (max-width: 480px) {
+  .third-header .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.third-header .nav-item:hover {
+  color: red;
+}
+
 .first-header {
   width: 100%;
   height: 715px;
@@ -11896,6 +11944,120 @@ button:hover {
 #reservation .container .card p a {
   color: red;
   text-decoration: none;
+}
+
+.third-header {
+  width: 100%;
+  height: 550px;
+  background-image: url(https://preview.colorlib.com/theme/pato/images/bg-title-page-02.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  color: white;
+  padding-top: 35px;
+}
+.third-header .navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.third-header .navbar .links {
+  color: white;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.third-header .navbar .links .nav-item {
+  margin-right: 20px;
+}
+.third-header .h2 {
+  padding-top: 150px;
+  text-align: center;
+}
+.third-header .h2 h2, .third-header .h2 .h2 {
+  font-family: "montserrat";
+  font-size: 50px;
+  font-weight: 650;
+}
+@media (min-width: 300px) and (max-width: 480px) {
+  .third-header .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.third-header .nav-item:hover {
+  color: red;
+}
+
+#Gal-grid {
+  height: 1600px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#Gal-grid .buton {
+  padding: 70px;
+}
+#Gal-grid .buton .btn {
+  border-radius: 30px;
+}
+#Gal-grid .buton .btn .btn-outline-dark {
+  border: none;
+}
+#Gal-grid .parent {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 450px);
+  grid-template-rows: repeat(3, 390px);
+  grid-column-gap: 15px;
+  grid-row-gap: 4px;
+}
+#Gal-grid .parent div:hover img {
+  transform: scale(1.1);
+}
+#Gal-grid .div1 {
+  grid-area: 1/1/2/2;
+}
+#Gal-grid .div2 {
+  grid-area: 1/2/2/3;
+}
+#Gal-grid .div3 {
+  grid-area: 1/3/2/4;
+}
+#Gal-grid .div4 {
+  grid-area: 2/1/3/2;
+}
+#Gal-grid .div5 {
+  grid-area: 2/2/3/3;
+}
+#Gal-grid .div6 {
+  grid-area: 2/3/3/4;
+}
+#Gal-grid .div7 {
+  grid-area: 3/1/4/2;
+}
+#Gal-grid .div8 {
+  grid-area: 3/2/4/3;
+}
+#Gal-grid .div9 {
+  grid-area: 3/3/4/4;
+}
+#Gal-grid .div1, #Gal-grid .div2, #Gal-grid .div3, #Gal-grid .div4, #Gal-grid .div5, #Gal-grid .div6,
+#Gal-grid .div7, #Gal-grid .div8, #Gal-grid .div9 {
+  position: relative;
+  overflow: hidden;
+}
+#Gal-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s linear;
 }
 
 * {
