@@ -22,6 +22,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11062,6 +11064,52 @@ button:hover {
   color: red;
 }
 
+.fourth-header {
+  width: 100%;
+  height: 550px;
+  background-image: url(https://preview.colorlib.com/theme/pato/images/bg-title-page-03.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  color: white;
+  padding-top: 35px;
+}
+.fourth-header .navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.fourth-header .navbar .links {
+  color: white;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.fourth-header .navbar .links .nav-item {
+  margin-right: 20px;
+}
+.fourth-header .h2 {
+  padding-top: 150px;
+  text-align: center;
+}
+.fourth-header .h2 h2, .fourth-header .h2 .h2 {
+  font-family: "montserrat";
+  font-size: 50px;
+  font-weight: 650;
+}
+@media (min-width: 300px) and (max-width: 480px) {
+  .fourth-header .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.fourth-header .nav-item:hover {
+  color: red;
+}
+
 .first-header {
   width: 100%;
   height: 715px;
@@ -12058,6 +12106,241 @@ button:hover {
   height: 100%;
   object-fit: cover;
   transition: 0.3s linear;
+}
+
+.fourth-header {
+  width: 100%;
+  height: 550px;
+  background-image: url(https://preview.colorlib.com/theme/pato/images/bg-title-page-03.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  color: white;
+  padding-top: 35px;
+}
+.fourth-header .navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.fourth-header .navbar .links {
+  color: white;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.fourth-header .navbar .links .nav-item {
+  margin-right: 20px;
+}
+.fourth-header .h2 {
+  padding-top: 150px;
+  text-align: center;
+}
+.fourth-header .h2 h2, .fourth-header .h2 .h2 {
+  font-family: "montserrat";
+  font-size: 50px;
+  font-weight: 650;
+}
+@media (min-width: 300px) and (max-width: 480px) {
+  .fourth-header .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.fourth-header .nav-item:hover {
+  color: red;
+}
+
+#Card {
+  background-color: rgb(208, 208, 208);
+  height: 400px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#Card .card {
+  background-color: rgb(208, 208, 208);
+  height: 300px;
+  width: 50%;
+  border: none;
+}
+#Card .card h4, #Card .card .h4 {
+  font-family: "dancing script";
+  color: red;
+  font-size: 35px;
+  font-weight: 500;
+}
+#Card .card h5, #Card .card .h5 {
+  font-size: 50px;
+  font-weight: 700;
+}
+#Card .card p {
+  color: grey;
+}
+
+#dis {
+  background-image: url(https://preview.colorlib.com/theme/pato/images/header-menu-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 450px;
+}
+#dis .dis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+#dis .dis h2, #dis .dis .h2 {
+  color: red;
+  font-family: "dancing script";
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+}
+#dis .dis h3, #dis .dis .h3 {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+#card1 {
+  width: 100%;
+  height: 1050px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  justify-content: center;
+}
+#card1 .word {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
+  width: 50%;
+  margin-right: 10px;
+}
+#card1 .word h2, #card1 .word .h2 {
+  color: red;
+  font-family: "dancing script";
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0;
+}
+#card1 .word h3, #card1 .word .h3 {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 5px;
+}
+#card1 .word a {
+  text-decoration: none;
+  color: black;
+  margin: 0;
+}
+#card1 .photo {
+  margin-left: 20px;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 30%;
+}
+#card1 .photo img {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+}
+#card1 .photo img:hover {
+  transform: scale(1.1);
+}
+#card1 .word:nth-child(2) {
+  order: 1;
+}
+
+#cafe {
+  background-image: url(https://preview.colorlib.com/theme/pato/images/bg-cover-video-02.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 450px;
+}
+
+#chef {
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+#chef .h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+#chef .h3 h3, #chef .h3 .h3 {
+  color: red;
+  font-family: "dancing script";
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+}
+#chef .h3 p {
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 5px;
+  text-align: center;
+}
+#chef .card-group {
+  height: 200px;
+  width: 80%;
+  justify-content: space-between;
+  gap: 20px;
+}
+#chef .card-group .card {
+  overflow: hidden;
+  border-radius: 10px;
+  border: grey;
+}
+#chef .card-group .card a {
+  color: black;
+  text-decoration: none;
+}
+#chef .card-group .card p {
+  color: grey;
+}
+#chef .card-group .card img {
+  border-radius: 50%;
+  width: 40%;
+  margin: 0 auto;
+  height: auto;
+  border: 5px red solid;
 }
 
 * {

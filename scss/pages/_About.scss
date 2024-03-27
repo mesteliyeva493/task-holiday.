@@ -1,0 +1,259 @@
+@import "../abstract/variables";
+@import"../abstract/mixins";
+
+.fourth-header{
+    width: 100%;
+    height: 550px;
+    background-image: url(https://preview.colorlib.com/theme/pato/images/bg-title-page-03.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    color: white;
+    padding-top: 35px;
+    .navbar{
+        max-width: 1200px;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;  
+        .links{
+            color: white;
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            .nav-item{
+                margin-right:20px;
+               }
+            }
+        }
+    
+    .h2{
+        padding-top: 150px;
+        text-align: center;
+
+        h2{
+            font-family: 'montserrat';
+            font-size: 50px;
+            font-weight: 650;
+        }
+        
+     
+    }
+    @include media-phone-only {
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .nav-item:hover {
+        color: red;
+    }
+}
+
+@mixin media-phone-only {
+    @media (min-width: 300px) and (max-width: 480px) {
+        @content;
+    }
+}
+
+#Card{
+    background-color: rgb(208, 208, 208);
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    .card{
+        background-color: rgb(208, 208, 208);
+        height: 300px;
+        width: 50%;
+        border: none;
+        h4{
+            font-family: "dancing script";
+            color: red;
+            font-size: 35px;
+            font-weight: 500;
+        }
+        h5{
+            font-size: 50px;
+            font-weight: 700;
+        }
+        p{
+            color:grey;
+        }
+    }
+}
+
+#dis{
+    background-image: url(https://preview.colorlib.com/theme/pato/images/header-menu-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 450px;
+    .dis{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+     h2{
+        color: red;
+        font-family: "dancing script";
+        font-size: 40px;
+        font-weight: 500;
+        margin: 0;
+        text-align: center;
+     }
+     h3{
+        color:white;
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing:5px;
+        text-align: center;
+     }
+    }
+}
+#card1{
+    width: 100%;
+    height: 1050px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-top:100px;
+    padding-bottom: 40px;
+    justify-content: center;
+  
+       
+    
+   .word{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    width: 50%;
+    margin-right: 10px;
+  
+    h2{
+        color: red;
+        font-family: "dancing script";
+        font-size: 40px;
+        font-weight: 500;
+        margin: 0;
+    }
+    h3{
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing:5px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        margin: 0;
+    }
+   }
+   .photo{
+    margin-left: 20px;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 30%;
+ 
+    img{
+        width: 100%;
+        height: auto;
+        border: none;
+        border-radius:30px;
+        transition: transform 0.3s ease;
+
+    }
+    img:hover{
+        transform: scale(1.1);
+    }
+   }
+   .word:nth-child(2) {
+    order: 1;
+}
+  
+}
+#cafe{
+    background-image: url(https://preview.colorlib.com/theme/pato/images/bg-cover-video-02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 450px;
+}
+
+
+
+#chef{
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    .h3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+     h3{
+        color: red;
+        font-family: "dancing script";
+        font-size: 40px;
+        font-weight: 500;
+        margin: 0;
+        text-align: center;
+     }
+     p{
+        color:rgb(0, 0, 0);
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing:5px;
+        text-align: center;
+     }
+    }
+    .card-group{
+        height: 200px;
+        width:80%;
+        justify-content: space-between;
+        gap: 20px;
+
+        .card{
+            overflow: hidden;
+            border-radius: 10px;
+            border: grey;
+             a{
+                color: black;
+                text-decoration: none;
+             }
+             p{
+                color: grey;
+             }
+
+            img {           
+                border-radius: 50%;
+                width: 40%;
+                margin:0 auto;
+                height: auto; 
+                border: 5px red solid;
+            }
+
+        }
+     
+    }
+}
